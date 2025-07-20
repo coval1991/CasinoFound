@@ -1,5 +1,9 @@
 // ABIs dos contratos inteligentes do CasinoFound
-
+const CONTRACTS = {
+  CFD_TOKEN: '0x7fE9eE1975263998D7BfD7ed46CAD44Ee62A63bE',
+  USDT: '0xc2132D05D31c914a87C6611C10748AEb04B58e8F',
+  ICO_PHASE1: '0x8008A571414ebAF2f965a5a8d34D78cEfa8BD8bD'
+};
 const CFD_TOKEN_ABI = [
   {
     "inputs": [],
