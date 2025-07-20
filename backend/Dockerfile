@@ -11,7 +11,7 @@ COPY backend/package*.json ./
 RUN npm ci --only=production
 
 # Copiar código fonte
-COPY backend/ .
+COPY ..
 
 # Criar usuário não-root
 RUN addgroup -g 1001 -S nodejs
