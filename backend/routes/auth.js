@@ -2,8 +2,7 @@ const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
-const auth = require('../middleware/auth');
-
+const { authenticateToken } = require('../middleware/auth');
 const router = express.Router();
 
 // Registrar usuário (wallet)
@@ -224,7 +223,7 @@ router.post('/admin-login', async (req, res) => {
 });
 
 // Verificar token
-router.get('/verify', auth, async (req, res) => {
+router.get('/verify', authenticateToken, async (req, res) => {
   try {
     const user = await User.findById(req.user.userId).select('-password');
     
