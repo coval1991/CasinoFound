@@ -548,10 +548,7 @@ const USDT_ABI = [
 ];
 
 module.exports = {
+  CONTRACTS,
   CFD_TOKEN_ABI,
-  AFFILIATE_MANAGER_ABI,
-  ICO_PHASE1_ABI,
-  USDT_ABI
+  ICO_ABI
 };
-
-
