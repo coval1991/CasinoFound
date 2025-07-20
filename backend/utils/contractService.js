@@ -1,4 +1,5 @@
-const { ethers } = require('ethers');
+const abis = require('../contracts/abis');
+console.log("Conteúdo do abis.js:", abis);const { ethers } = require('ethers');
 const { CONTRACTS, CFD_TOKEN_ABI, ICO_ABI } = require('../contracts/abis');
 
 class ContractService {
