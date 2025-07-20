@@ -466,7 +466,7 @@ const AFFILIATE_MANAGER_ABI = [
   }
 ];
 
-const ICO_PHASE1_ABI = [
+const ICO_ABI = [
   {
     "inputs": [
       {
