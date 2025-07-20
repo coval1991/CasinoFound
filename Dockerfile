@@ -8,7 +8,7 @@ WORKDIR /app
 COPY backend/package*.json ./
 
 # Instalar dependências
-RUN npm ci --only=production
+RUN npm install --only=production
 
 # Copiar código fonte
 COPY backend/ .
